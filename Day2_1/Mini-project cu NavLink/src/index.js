@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import Users from './components/Users';
@@ -12,22 +12,29 @@ const Root = () => {
     <div>
         <BrowserRouter>
           <div>
-            <Link to="/"> App </Link>
-            <Link to="/users"> Users </Link>
-            <Link to="/users/1"> User's Profile </Link>
-            <Link to="/" onClick={handleClick}> App with click handler </Link>
-
+            <NavLink exact activeClassName="red" to="/" > App </NavLink>
+            <NavLink exact activeClassName="blue" to="/users"> Users </NavLink>
+            <NavLink activeClassName="green" to="/users/1"> User's Profile </NavLink>
+            <NavLink exact to="/" onClick={handleClick} activeStyle={{fontweight: "bold"}}> App with click handler </NavLink>
+          <Switch>
             <Route exact path="/">
               <App />
             </Route>
 
-            <Route exact path="/users">
+            <Route path="/users/:userId">
+              <Profile />
+            </Route>
+
+            <Route path="/users">
               <Users />
             </Route>
 
-            <Route exact path="/users/:userId">
-              <Profile />
+   
+
+            <Route>
+              <h1>404: Page not found</h1>
             </Route>
+          </Switch>
         
           </div>  
         </BrowserRouter>

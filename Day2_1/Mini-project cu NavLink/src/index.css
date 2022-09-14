@@ -1,1 +1,20 @@
 /* TODO Add site wide styles */
+.active {
+  font-weight: bold;
+}
+
+.red {
+  font-size: 30px;
+  color: red;
+}
+
+
+.blue {
+  font-size: 30px;
+  color: blue;
+}
+
+.green {
+  font-size: 30px;
+  color: green;
+}
