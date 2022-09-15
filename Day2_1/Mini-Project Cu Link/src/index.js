@@ -14,7 +14,7 @@ const Root = () => {
           <div>
             <Link to="/"> App </Link>
             <Link to="/users"> Users </Link>
-            <Link to="/users/1"> User's Profile </Link>
+            <Link to="/users/1"> Adriana's Profile </Link>
             <Link to="/" onClick={handleClick}> App with click handler </Link>
 
             <Route exact path="/">
