@@ -7,7 +7,9 @@ const Profile = ()  => {
     const { userId } = params;
     console.log(params);
     if (userId === "0") return <Redirect to="/" />
-    return <h1> Hello from User Profile {userId}! </h1>
+    return 
+      (<h1> Hello from User Profile {userId}! </h1>
+   )
 
 }
 
