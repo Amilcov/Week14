@@ -24,7 +24,7 @@ function Profile() {
                <h1>Photos for User {userId} </h1>
             </Route>
             
-            <Route to={`${match.url}/abot`}>
+            <Route to={`${match.url}/about`}>
                <h1>About for User {userId} </h1>
             </Route>
 
