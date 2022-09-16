@@ -16,15 +16,15 @@ function Profile() {
 
           <Switch>
 
-            <Route to={`${match.url}/posts`}>
+            <Route path={`${match.url}/posts`}>
                <h1>Posts for User {userId} </h1>
             </Route>
 
-            <Route to={`${match.url}/photos`}>
+            <Route path={`${match.url}/photos`}>
                <h1>Photos for User {userId} </h1>
             </Route>
             
-            <Route to={`${match.url}/about`}>
+            <Route path={`${match.url}/about`}>
                <h1>About for User {userId} </h1>
             </Route>
 
