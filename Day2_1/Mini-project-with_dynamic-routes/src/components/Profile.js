@@ -14,11 +14,11 @@ function Profile() {
 
           <Switch>
 
-            <Route to="/users/:userId/posts">
+            <Route path="/users/:userId/posts">
                <h1>Posts for User {userId} </h1>
             </Route>
 
-            <Route to="/users/:userId/photos">
+            <Route path="/users/:userId/photos">
                <h1>Photos for User {userId} </h1>
             </Route>
             
