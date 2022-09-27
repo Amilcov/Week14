@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 
 import ContactUs from './components/ContactUs';
 
+const root = ReactDOM.createRoot( document.getElementById('root'));
 
-ReactDOM.render(
+root.render(
   <React.StrictMode>
     <ContactUs />
   </React.StrictMode>,
-  document.getElementById('root')
+
 );
