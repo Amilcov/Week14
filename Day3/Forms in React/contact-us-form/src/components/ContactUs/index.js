@@ -24,7 +24,7 @@ function ContactUs(props) {
     //   };
 
    
-      if (!isEmail(email)) {err.push('email wrong')}
+      if (!isEmail(email)) {err.push('Please provide a valid email')}
       return err;
     }
 
