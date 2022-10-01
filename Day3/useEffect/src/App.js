@@ -69,7 +69,7 @@ function App() {
             Feather Count:
             <input
                 type="number"
-                onChange={(e) => setFeatherCount(e.currentTarget.value)}
+                onChange={(e) => setFeatherCount(e.currentTarget.value)} value={featherCount < 0 ? 0: (featherCount > 10 ? 10 : featherCount )} 
                 defaultValue={0}
                 min={0}
                 max={10}
